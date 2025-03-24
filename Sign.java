@@ -14,7 +14,7 @@ public class Sign {
         String lines = ""; //set up string to append to and return
         for (int i=0;i<numberOfLines();i++) {
             if (i==numberOfLines()-1) lines += msg.substring(i*width); //last line just uses the remaining part of the msg string
-            else lines += msg.substring(i*width,(i+1)*width)+";"; //appends section for line i and the semicolon as required
+            else lines += msg.substring(i*width,(i+1)*width)+";"; //appends section for line i and the semicolon as required 
         }
         return lines;
     }
